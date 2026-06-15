@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campus Intel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+
+    <!-- ── TOP NAV ── -->
+    <header class="topnav">
+      <div class="topnav-brand">
+        <div class="brand-icon" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="brand-name">Campus Intel</span>
+      </div>
+
+      <nav class="topnav-links" aria-label="Main navigation">
+        <button class="nav-btn active" data-page="home">Home</button>
+        <button class="nav-btn" data-page="sources">Sources</button>
+        <button class="nav-btn" data-page="assistant">Assistant</button>
+        <button class="nav-btn" data-page="map">MCP Map</button>
+      </nav>
+
+      <div class="topnav-right">
+        <span class="live-badge">
+          <span class="pulse-dot"></span>Live
+        </span>
+        <span class="student-tag">Student View</span>
+      </div>
+    </header>
+
+    <!-- ── MOBILE NAV ── -->
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <button class="mnav-btn active" data-page="home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+        Home
+      </button>
+      <button class="mnav-btn" data-page="sources">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        Sources
+      </button>
+      <button class="mnav-btn" data-page="assistant">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        Ask
+      </button>
+      <button class="mnav-btn" data-page="map">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg>
+        Map
+      </button>
+    </nav>
+
+    <!-- ══════════════════════════════════════════════
+         PAGE: HOME
+    ══════════════════════════════════════════════ -->
+    <main id="page-home" class="page active">
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Problem Statement 1 · Northstar</p>
+          <h1>One place for books, meals, events &amp; academics.</h1>
+          <p class="hero-sub">All your campus data sources in a single unified dashboard, updated live.</p>
+        </div>
+        <div class="hero-stats" aria-label="System metrics">
+          <div class="stat-card">
+            <strong id="metric-sources">—</strong>
+            <span>Sources</span>
+          </div>
+          <div class="stat-card">
+            <strong id="metric-tools">—</strong>
+            <span>MCP Tools</span>
+          </div>
+          <div class="stat-card">
+            <strong id="metric-sync">Live</strong>
+            <span>Query mode</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick info bar -->
+      <div class="info-bar">
+        <div class="info-bar-left">
+          <span class="info-label">Campus</span>
+          <strong id="campus-name">—</strong>
+        </div>
+        <div class="info-bar-right">
+          <span id="today-label" class="info-muted">—</span>
+          <button id="refresh-button" class="btn-ghost" type="button">↻ Refresh</button>
+        </div>
+      </div>
+
+      <!-- Source health cards (mini preview) -->
+      <section class="home-sources">
+        <div class="section-header">
+          <h2>Live Sources</h2>
+          <span id="source-count" class="badge">0</span>
+        </div>
+        <div id="source-health-list" class="health-grid" aria-live="polite"></div>
+      </section>
+
+      <!-- Quick actions -->
+      <section class="quick-actions">
+        <div class="section-header"><h2>Quick Ask</h2></div>
+        <div class="qa-grid" id="home-suggestions">
+          <button class="qa-card" type="button">
+            <span class="qa-icon">📚</span>
+            <span>Is an AI book available and what workshop is today?</span>
+          </button>
+          <button class="qa-card" type="button">
+            <span class="qa-icon">🥗</span>
+            <span>Show vegan lunch options and upcoming tech events.</span>
+          </button>
+          <button class="qa-card" type="button">
+            <span class="qa-icon">📅</span>
+            <span>What academic deadlines should I watch this week?</span>
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ══════════════════════════════════════════════
+         PAGE: SOURCES
+    ══════════════════════════════════════════════ -->
+    <main id="page-sources" class="page">
+      <div class="page-header">
+        <div>
+          <p class="eyebrow">Independent source servers</p>
+          <h1>Campus Data Sources</h1>
+        </div>
+        <button id="refresh-button-2" class="btn-ghost" type="button">↻ Refresh</button>
+      </div>
+      <div id="source-cards" class="source-grid" aria-live="polite"></div>
+    </main>
+
+    <!-- ══════════════════════════════════════════════
+         PAGE: ASSISTANT
+    ══════════════════════════════════════════════ -->
+    <main id="page-assistant" class="page">
+      <div class="page-header">
+        <div>
+          <p class="eyebrow">Embedded AI Assistant</p>
+          <h1>Ask Campus Data</h1>
+        </div>
+        <span class="status-chip" id="assistant-state">Ready</span>
+      </div>
+
+      <div class="assistant-layout">
+        <!-- Chat area -->
+        <div class="chat-area">
+          <div id="chat-log" class="chat-log" aria-live="polite"></div>
+
+          <form id="assistant-form" class="chat-input-row">
+            <textarea id="assistant-input" rows="2" placeholder="Ask anything about campus…"></textarea>
+            <button id="ask-button" type="submit" class="btn-primary">Send</button>
+          </form>
+        </div>
+
+        <!-- Side: suggestions + trace -->
+        <div class="assistant-side">
+          <div class="side-block">
+            <p class="side-label">Try asking</p>
+            <div id="suggestions" class="suggestion-list">
+              <button type="button">Is an AI book available and what workshop is today?</button>
+              <button type="button">Show vegan lunch options and upcoming tech events.</button>
+              <button type="button">What academic deadlines should I watch this week?</button>
+            </div>
+          </div>
+
+          <div class="side-block">
+            <div class="side-label-row">
+              <p class="side-label">Tool trace</p>
+              <strong id="trace-count" class="badge">0</strong>
+            </div>
+            <div id="tool-trace" class="trace-list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ══════════════════════════════════════════════
+         PAGE: MCP MAP
+    ══════════════════════════════════════════════ -->
+    <main id="page-map" class="page">
+      <div class="page-header">
+        <div>
+          <p class="eyebrow">Runtime architecture</p>
+          <h1>MCP Routing Map</h1>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <div class="map-card center-node">
+          <div class="node-icon">🤖</div>
+          <strong>Assistant Router</strong>
+          <span>Routes queries to the right source</span>
+        </div>
+
+        <div class="map-connector" aria-hidden="true">
+          <div class="connector-line"></div>
+          <div class="connector-dots">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="mcp-nodes">
+          <div class="map-card mcp-node" style="--accent:#2563eb">
+            <div class="node-icon">📚</div>
+            <strong>Library MCP</strong>
+            <span>Books, availability, study rooms</span>
+          </div>
+          <div class="map-card mcp-node" style="--accent:#047857">
+            <div class="node-icon">🍽️</div>
+            <strong>Cafeteria MCP</strong>
+            <span>Menu, nutrition, timing</span>
+          </div>
+          <div class="map-card mcp-node" style="--accent:#7c3aed">
+            <div class="node-icon">🎉</div>
+            <strong>Events MCP</strong>
+            <span>Workshops, clubs, activities</span>
+          </div>
+          <div class="map-card mcp-node" style="--accent:#c2410c">
+            <div class="node-icon">🎓</div>
+            <strong>Academics MCP</strong>
+            <span>Deadlines, courses, faculty</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- How it works -->
+      <div class="how-it-works">
+        <h2>How it works</h2>
+        <div class="steps-grid">
+          <div class="step">
+            <span class="step-num">1</span>
+            <strong>You ask a question</strong>
+            <p>Type anything in the Assistant tab — books, food, events, deadlines.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <strong>Router picks the right MCP</strong>
+            <p>The AI router decides which source server(s) to call based on your query.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <strong>Tools run in parallel</strong>
+            <p>Multiple MCP tools can run simultaneously to build a complete answer.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">4</span>
+            <strong>Answer comes back to you</strong>
+            <p>Results are merged and returned in plain language with source tags.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

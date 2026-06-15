@@ -1,0 +1,66 @@
+{
+  "sourceName": "Student Activities Calendar",
+  "lastSynced": "2026-06-14T09:05:00+05:30",
+  "events": [
+    {
+      "id": "EVT-2201",
+      "title": "MCP Tool-Building Workshop",
+      "club": "AI Student Chapter",
+      "date": "2026-06-14",
+      "time": "15:00",
+      "venue": "Innovation Lab 2",
+      "seatsLeft": 18,
+      "tags": ["ai", "mcp", "workshop", "coding"]
+    },
+    {
+      "id": "EVT-2202",
+      "title": "Tech Fest Volunteer Briefing",
+      "club": "TechFest Core Team",
+      "date": "2026-06-15",
+      "time": "17:30",
+      "venue": "Auditorium A",
+      "seatsLeft": 64,
+      "tags": ["tech fest", "volunteer", "orientation"]
+    },
+    {
+      "id": "EVT-2203",
+      "title": "Placement DSA Sprint",
+      "club": "Coding Club",
+      "date": "2026-06-16",
+      "time": "18:00",
+      "venue": "CS Lab 4",
+      "seatsLeft": 12,
+      "tags": ["placement", "algorithms", "coding"]
+    },
+    {
+      "id": "EVT-2204",
+      "title": "Open Mic and Poetry Night",
+      "club": "Literary Society",
+      "date": "2026-06-17",
+      "time": "19:00",
+      "venue": "Amphitheatre",
+      "seatsLeft": 120,
+      "tags": ["culture", "music", "poetry"]
+    },
+    {
+      "id": "EVT-2205",
+      "title": "Cloud Deployment Clinic",
+      "club": "Developer Student Club",
+      "date": "2026-06-18",
+      "time": "16:00",
+      "venue": "Seminar Hall B",
+      "seatsLeft": 22,
+      "tags": ["cloud", "devops", "hosting", "project"]
+    },
+    {
+      "id": "EVT-2206",
+      "title": "Robotics Maze Challenge",
+      "club": "Robotics Club",
+      "date": "2026-06-20",
+      "time": "10:00",
+      "venue": "Mechanical Workshop",
+      "seatsLeft": 8,
+      "tags": ["robotics", "iot", "competition"]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "campus-intelligence-dashboard",
+  "version": "1.0.0",
+  "description": "Unified Campus Intelligence Dashboard with MCP-style campus source servers and an AI assistant router.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "node tests/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "campus",
+    "dashboard",
+    "mcp",
+    "assistant",
+    "web-development"
+  ],
+  "license": "MIT"
+}

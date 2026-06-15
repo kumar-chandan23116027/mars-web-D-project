@@ -1,0 +1,75 @@
+{
+  "sourceName": "Annapurna Cafeteria",
+  "lastSynced": "2026-06-14T08:40:00+05:30",
+  "hours": {
+    "breakfast": "07:30-10:00",
+    "lunch": "12:00-14:30",
+    "snacks": "16:00-18:00",
+    "dinner": "19:00-21:00"
+  },
+  "menu": [
+    {
+      "day": "Sunday",
+      "meals": [
+        { "slot": "breakfast", "name": "Masala dosa with coconut chutney", "price": 45, "labels": ["vegetarian"], "waitMinutes": 6 },
+        { "slot": "lunch", "name": "Vegetable biryani bowl with raita on side", "price": 85, "labels": ["vegetarian", "vegan option"], "waitMinutes": 9 },
+        { "slot": "snacks", "name": "Paneer roll", "price": 55, "labels": ["vegetarian", "high protein"], "waitMinutes": 5 },
+        { "slot": "dinner", "name": "Dal tadka, rice, salad", "price": 70, "labels": ["vegan option"], "waitMinutes": 8 }
+      ]
+    },
+    {
+      "day": "Monday",
+      "meals": [
+        { "slot": "breakfast", "name": "Poha with sprouts", "price": 35, "labels": ["vegan", "light"], "waitMinutes": 4 },
+        { "slot": "lunch", "name": "Rajma rice combo", "price": 75, "labels": ["vegetarian"], "waitMinutes": 7 },
+        { "slot": "snacks", "name": "Grilled corn sandwich", "price": 50, "labels": ["vegetarian"], "waitMinutes": 6 },
+        { "slot": "dinner", "name": "Chapati, mixed veg, dal", "price": 65, "labels": ["vegan option"], "waitMinutes": 6 }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "meals": [
+        { "slot": "breakfast", "name": "Idli sambar plate", "price": 40, "labels": ["vegan"], "waitMinutes": 3 },
+        { "slot": "lunch", "name": "Chole kulcha", "price": 70, "labels": ["vegetarian"], "waitMinutes": 8 },
+        { "slot": "snacks", "name": "Fruit bowl", "price": 45, "labels": ["vegan", "healthy"], "waitMinutes": 2 },
+        { "slot": "dinner", "name": "Lemon rice with curd", "price": 60, "labels": ["vegetarian"], "waitMinutes": 5 }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "meals": [
+        { "slot": "breakfast", "name": "Aloo paratha with curd", "price": 50, "labels": ["vegetarian"], "waitMinutes": 7 },
+        { "slot": "lunch", "name": "Soya pulao with salad", "price": 80, "labels": ["vegan", "high protein"], "waitMinutes": 6 },
+        { "slot": "snacks", "name": "Cold coffee and veggie puff", "price": 60, "labels": ["vegetarian"], "waitMinutes": 5 },
+        { "slot": "dinner", "name": "Khichdi bowl", "price": 55, "labels": ["comfort", "vegan option"], "waitMinutes": 4 }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "meals": [
+        { "slot": "breakfast", "name": "Upma with filter coffee", "price": 45, "labels": ["vegetarian"], "waitMinutes": 5 },
+        { "slot": "lunch", "name": "Paneer tikka wrap", "price": 90, "labels": ["vegetarian", "high protein"], "waitMinutes": 10 },
+        { "slot": "snacks", "name": "Bhel and lime soda", "price": 45, "labels": ["vegan option"], "waitMinutes": 4 },
+        { "slot": "dinner", "name": "Veg hakka noodles", "price": 75, "labels": ["vegetarian"], "waitMinutes": 7 }
+      ]
+    },
+    {
+      "day": "Friday",
+      "meals": [
+        { "slot": "breakfast", "name": "Oats banana bowl", "price": 55, "labels": ["vegan", "healthy"], "waitMinutes": 3 },
+        { "slot": "lunch", "name": "South Indian thali", "price": 95, "labels": ["vegetarian"], "waitMinutes": 11 },
+        { "slot": "snacks", "name": "Veg momos", "price": 65, "labels": ["vegetarian"], "waitMinutes": 8 },
+        { "slot": "dinner", "name": "Palak dal with jeera rice", "price": 70, "labels": ["vegan option"], "waitMinutes": 5 }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "meals": [
+        { "slot": "breakfast", "name": "Medu vada sambar", "price": 45, "labels": ["vegan"], "waitMinutes": 5 },
+        { "slot": "lunch", "name": "Kadhi chawal", "price": 70, "labels": ["vegetarian"], "waitMinutes": 6 },
+        { "slot": "snacks", "name": "Club sandwich", "price": 75, "labels": ["vegetarian"], "waitMinutes": 9 },
+        { "slot": "dinner", "name": "Veg fried rice with soup", "price": 80, "labels": ["vegan option"], "waitMinutes": 7 }
+      ]
+    }
+  ]
+}

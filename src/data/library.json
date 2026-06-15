@@ -1,0 +1,94 @@
+{
+  "sourceName": "Raman Central Library",
+  "lastSynced": "2026-06-14T09:15:00+05:30",
+  "books": [
+    {
+      "id": "LIB-1001",
+      "title": "Applied Artificial Intelligence",
+      "author": "Nisha Menon",
+      "subject": "Artificial Intelligence",
+      "availability": "available",
+      "copies": 3,
+      "location": "Second Floor, AI Shelf A2",
+      "dueDate": null,
+      "tags": ["ai", "machine learning", "projects"]
+    },
+    {
+      "id": "LIB-1002",
+      "title": "Modern Web Systems",
+      "author": "Arjun Rao",
+      "subject": "Web Development",
+      "availability": "available",
+      "copies": 5,
+      "location": "First Floor, Software Shelf W1",
+      "dueDate": null,
+      "tags": ["react", "node", "apis", "frontend"]
+    },
+    {
+      "id": "LIB-1003",
+      "title": "Database Systems in Practice",
+      "author": "Leena Thomas",
+      "subject": "Databases",
+      "availability": "checked_out",
+      "copies": 0,
+      "location": "Ground Floor, Systems Shelf D4",
+      "dueDate": "2026-06-18",
+      "tags": ["sql", "normalization", "transactions"]
+    },
+    {
+      "id": "LIB-1004",
+      "title": "Operating Systems Lab Manual",
+      "author": "Department of CSE",
+      "subject": "Operating Systems",
+      "availability": "available",
+      "copies": 7,
+      "location": "Lab Reference Desk",
+      "dueDate": null,
+      "tags": ["os", "linux", "lab"]
+    },
+    {
+      "id": "LIB-1005",
+      "title": "Data Structures for Interviews",
+      "author": "Meera Kulkarni",
+      "subject": "Computer Science",
+      "availability": "available",
+      "copies": 2,
+      "location": "Career Corner C1",
+      "dueDate": null,
+      "tags": ["algorithms", "placement", "interview"]
+    },
+    {
+      "id": "LIB-1006",
+      "title": "Embedded Systems and IoT",
+      "author": "Farhan Shaikh",
+      "subject": "Electronics",
+      "availability": "checked_out",
+      "copies": 0,
+      "location": "Electronics Shelf E3",
+      "dueDate": "2026-06-21",
+      "tags": ["iot", "sensors", "microcontrollers"]
+    },
+    {
+      "id": "LIB-1007",
+      "title": "Cloud Native Deployment",
+      "author": "Kavya Iyer",
+      "subject": "Cloud Computing",
+      "availability": "available",
+      "copies": 4,
+      "location": "Second Floor, Cloud Shelf C3",
+      "dueDate": null,
+      "tags": ["devops", "containers", "hosting"]
+    },
+    {
+      "id": "LIB-1008",
+      "title": "Model Context Protocol Notes",
+      "author": "Innovation Lab",
+      "subject": "AI Integration",
+      "availability": "available",
+      "copies": 1,
+      "location": "Innovation Lab Reading Bay",
+      "dueDate": null,
+      "tags": ["mcp", "tools", "llm", "assistant"]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "sourceName": "Academic Handbook and Notices",
+  "lastSynced": "2026-06-14T09:20:00+05:30",
+  "entries": [
+    {
+      "id": "ACD-3001",
+      "type": "deadline",
+      "title": "Course registration closes",
+      "date": "2026-06-18",
+      "summary": "Semester V course registration closes at 5:00 PM. Late registration needs advisor approval.",
+      "tags": ["registration", "deadline", "semester"]
+    },
+    {
+      "id": "ACD-3002",
+      "type": "policy",
+      "title": "Attendance eligibility rule",
+      "date": null,
+      "summary": "Students need at least 75 percent attendance in each course to be eligible for end-semester exams.",
+      "tags": ["attendance", "exam", "eligibility"]
+    },
+    {
+      "id": "ACD-3003",
+      "type": "deadline",
+      "title": "Scholarship renewal forms",
+      "date": "2026-06-21",
+      "summary": "Merit scholarship renewal forms must be submitted through the student portal before midnight.",
+      "tags": ["scholarship", "forms", "finance"]
+    },
+    {
+      "id": "ACD-3004",
+      "type": "notice",
+      "title": "Mid-semester exam timetable",
+      "date": "2026-06-24",
+      "summary": "The revised mid-semester timetable is available in the academics office and student portal.",
+      "tags": ["exam", "timetable", "mid semester"]
+    },
+    {
+      "id": "ACD-3005",
+      "type": "handbook",
+      "title": "Library fine and book issue policy",
+      "date": null,
+      "summary": "Standard book issue duration is 14 days. Late returns are charged at 5 INR per day per book.",
+      "tags": ["library", "fine", "books"]
+    },
+    {
+      "id": "ACD-3006",
+      "type": "policy",
+      "title": "Project submission format",
+      "date": null,
+      "summary": "Final project submissions must include source code, README, architecture notes, test evidence, and a demo video link.",
+      "tags": ["project", "submission", "demo"]
+    }
+  ]
+}
