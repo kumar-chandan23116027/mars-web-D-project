@@ -262,7 +262,7 @@ Render will automatically detect the changes and redeploy.
 
 ## 👤 Author
 
-Built for **Problem Statement 1** — Amardeep Kumar
+Built for **Problem Statement 1** — Chandan Kumar
 
 ---
 
